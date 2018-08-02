@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import Titles from './components/Titles'
 
+
+import Titles from './components/Titles'
+import Form from './components/Form';
+import Weather from './components/Weather'
 //Begin the Class Component
 class App extends Component{
 
@@ -8,7 +11,9 @@ class App extends Component{
   render(){
     return(
       <div>
-      <Titles />
+        <Titles />
+        <Form />
+        <Weather />
       </div>
     );
   }
