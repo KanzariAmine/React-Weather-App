@@ -19,12 +19,22 @@ class Weather extends Component{
 //Used functionl Component when i return UI and  i don't the DATA
 const Weather = props =>
   (
-    <div>
-        {props.city && props.country && <p>Location: {props.city} {this.props.country} </p>}
-        {props.temprature && <p>Temperature: {props.temprature}C°</p>}
-        {props.humidity && <p>Humidity: {props.humidity}</p>}
-        {props.description && <p>Condition: {props.description}</p>}
-        {props.error && <p>{this.props.error}</p>}
+    <div className="weather__info">
+        {
+          props.city && props.country && <p className="weather__key">Location: <span className="weather__value">{props.city}, {props.country}</span> </p>
+        }
+        {
+          props.temprature && <p className="weather__key">Temperature: <span className="weather__value">{props.temprature}C°</span></p>
+        }
+        {
+          props.humidity && <p className="weather__key">Humidity: <span className="weather__value">{props.humidity}</span></p>
+        }
+        {
+          props.description && <p className="weather__key">Condition: <span className="weather__value">{props.description}</span></p>
+        }
+        {
+          props.error && <p className="weather__error"><span>{props.error}</span></p>
+        }
       </div>
   );
 
