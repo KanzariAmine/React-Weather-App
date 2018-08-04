@@ -16,7 +16,7 @@ class Weather extends Component{
 };
 */
 
-//
+//Used functionl Component when i return UI and  i don't the DATA
 const Weather = props =>
   (
     <div>
