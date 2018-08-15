@@ -4,7 +4,7 @@
 
 # Technology Used:
 
->Vanilla Javascript
+>React js
 
 ## Quick Start:
 
